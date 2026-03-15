@@ -375,7 +375,7 @@ watchdog = "4.0.0"
 webdriver-manager = "^4.0.2"
 
 [package.extras]
-benchmark = ["agbenchmark @ file:///home/reinier/code/agpt/AutoGPT/classic/benchmark"]
+benchmark = ["agbenchmark"]
 
 [package.source]
 type = "directory"
@@ -2554,26 +2554,27 @@ pyreadline3 = {version = "*", markers = "sys_platform == \"win32\" and python_ve
 
 [[package]]
 name = "hypercorn"
-version = "0.14.4"
+version = "0.15.0"
 description = "A ASGI Server based on Hyper libraries and inspired by Gunicorn"
 optional = false
 python-versions = ">=3.7"
 groups = ["main"]
 markers = "python_version <= \"3.11\" or python_version >= \"3.12\""
 files = [
-    {file = "hypercorn-0.14.4-py3-none-any.whl", hash = "sha256:f956200dbf8677684e6e976219ffa6691d6cf795281184b41dbb0b135ab37b8d"},
-    {file = "hypercorn-0.14.4.tar.gz", hash = "sha256:3fa504efc46a271640023c9b88c3184fd64993f47a282e8ae1a13ccb285c2f67"},
+    {file = "hypercorn-0.15.0-py3-none-any.whl", hash = "sha256:5008944999612fd188d7a1ca02e89d20065642b89503020ac392dfed11840730"},
+    {file = "hypercorn-0.15.0.tar.gz", hash = "sha256:d517f68d5dc7afa9a9d50ecefb0f769f466ebe8c1c18d2c2f447a24e763c9a63"},
 ]
 
 [package.dependencies]
 h11 = "*"
 h2 = ">=3.1.0"
 priority = "*"
+taskgroup = {version = "*", markers = "python_version < \"3.11\""}
 tomli = {version = "*", markers = "python_version < \"3.11\""}
 wsproto = ">=0.14.0"
 
 [package.extras]
-docs = ["pydata_sphinx_theme"]
+docs = ["pydata_sphinx_theme", "sphinxcontrib_mermaid"]
 h3 = ["aioquic (>=0.9.0,<1.0)"]
 trio = ["exceptiongroup (>=1.1.0)", "trio (>=0.22.0)"]
 uvloop = ["uvloop"]
@@ -3021,6 +3022,9 @@ files = [
     {file = "lief-0.14.1-cp312-cp312-manylinux_2_28_x86_64.manylinux_2_27_x86_64.whl", hash = "sha256:497b88f9c9aaae999766ba188744ee35c5f38b4b64016f7dbb7037e9bf325382"},
     {file = "lief-0.14.1-cp312-cp312-win32.whl", hash = "sha256:08bad88083f696915f8dcda4042a3bfc514e17462924ec8984085838b2261921"},
     {file = "lief-0.14.1-cp312-cp312-win_amd64.whl", hash = "sha256:e131d6158a085f8a72124136816fefc29405c725cd3695ce22a904e471f0f815"},
+    {file = "lief-0.14.1-cp313-cp313-manylinux_2_28_x86_64.manylinux_2_27_x86_64.whl", hash = "sha256:f9ff9a6959fb6d0e553cca41cd1027b609d27c5073e98d9fad8b774fbb5746c2"},
+    {file = "lief-0.14.1-cp313-cp313-win32.whl", hash = "sha256:95f295a7cc68f4e14ce7ea4ff8082a04f5313c2e5e63cc2bbe9d059190b7e4d5"},
+    {file = "lief-0.14.1-cp313-cp313-win_amd64.whl", hash = "sha256:cdc1123c2e27970f8c8353505fd578e634ab33193c8d1dff36dc159e25599a40"},
     {file = "lief-0.14.1-cp38-cp38-macosx_11_0_arm64.whl", hash = "sha256:df650fa05ca131e4dfeb42c77985e1eb239730af9944bc0aadb1dfac8576e0e8"},
     {file = "lief-0.14.1-cp38-cp38-macosx_11_0_x86_64.whl", hash = "sha256:b4e76eeb48ca2925c6ca6034d408582615f2faa855f9bb11482e7acbdecc4803"},
     {file = "lief-0.14.1-cp38-cp38-manylinux2014_aarch64.whl", hash = "sha256:016e4fac91303466024154dd3c4b599e8b7c52882f72038b62a2be386d98c8f9"},
@@ -6126,6 +6130,22 @@ files = [
 widechars = ["wcwidth"]
 
 [[package]]
+name = "taskgroup"
+version = "0.0.0a4"
+description = "backport of asyncio.TaskGroup, asyncio.Runner and asyncio.timeout"
+optional = false
+python-versions = "*"
+groups = ["main"]
+markers = "python_version < \"3.11\""
+files = [
+    {file = "taskgroup-0.0.0a4-py2.py3-none-any.whl", hash = "sha256:5c1bd0e4c06114e7a4128583ab75c987597d5378a33948a3b74c662b90f61277"},
+    {file = "taskgroup-0.0.0a4.tar.gz", hash = "sha256:eb08902d221e27661950f2a0320ddf3f939f579279996f81fe30779bca3a159c"},
+]
+
+[package.dependencies]
+exceptiongroup = "*"
+
+[[package]]
 name = "tenacity"
 version = "8.2.3"
 description = "Retry code until it succeeds"
@@ -7260,4 +7280,4 @@ benchmark = ["agbenchmark"]
 [metadata]
 lock-version = "2.1"
 python-versions = "^3.10"
-content-hash = "b3d4efee5861b32152024dada1ec61f4241122419cb538012c00a6ed55ac8a4b"
+content-hash = "0232adaf538e33af9e78e5bf5979d8d2be862c546a831f578498367f4722563f"
