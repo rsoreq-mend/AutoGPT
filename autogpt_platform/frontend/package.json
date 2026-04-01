@@ -53,7 +53,7 @@
     "@radix-ui/react-toast": "1.2.15",
     "@radix-ui/react-tooltip": "1.2.8",
     "@rjsf/core": "6.1.2",
-    "@rjsf/utils": "6.1.2",
+    "@rjsf/utils": "6.2.3",
     "@rjsf/validator-ajv8": "6.1.2",
     "@sentry/nextjs": "10.27.0",
     "@supabase/ssr": "0.7.0",
