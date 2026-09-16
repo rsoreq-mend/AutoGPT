@@ -82,13 +82,13 @@ importers:
         version: 1.2.8(@types/react-dom@18.3.5(@types/react@18.3.17))(@types/react@18.3.17)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@rjsf/core':
         specifier: 6.1.2
-        version: 6.1.2(@rjsf/utils@6.1.2(react@18.3.1))(react@18.3.1)
+        version: 6.1.2(@rjsf/utils@6.2.3(react@18.3.1))(react@18.3.1)
       '@rjsf/utils':
-        specifier: 6.1.2
-        version: 6.1.2(react@18.3.1)
+        specifier: 6.2.3
+        version: 6.2.3(react@18.3.1)
       '@rjsf/validator-ajv8':
         specifier: 6.1.2
-        version: 6.1.2(@rjsf/utils@6.1.2(react@18.3.1))
+        version: 6.1.2(@rjsf/utils@6.2.3(react@18.3.1))
       '@sentry/nextjs':
         specifier: 10.27.0
         version: 10.27.0(@opentelemetry/context-async-hooks@2.2.0(@opentelemetry/api@1.9.0))(@opentelemetry/core@2.2.0(@opentelemetry/api@1.9.0))(@opentelemetry/sdk-trace-base@2.2.0(@opentelemetry/api@1.9.0))(next@15.4.10(@babel/core@7.28.5)(@opentelemetry/api@1.9.0)(@playwright/test@1.56.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)(webpack@5.104.1(esbuild@0.25.12))
@@ -2376,8 +2376,8 @@ packages:
       '@rjsf/utils': ^6.x
       react: '>=18'
 
-  '@rjsf/utils@6.1.2':
-    resolution: {integrity: sha512-Px3FIkE1KK0745Qng9v88RZ0O7hcLf/1JUu0j00g+r6C8Zyokna42Hz/5TKyyQSKJqgVYcj2Z47YroVLenUM3A==}
+  '@rjsf/utils@6.2.3':
+    resolution: {integrity: sha512-HAeKIaihw/f3ajpZ3FcolqmYWlwedF3o0dOAzzuA3gpQah+uu6CEnxiEiwnTzLmojzRWQc+YyDS4eAKJ0T7LDg==}
     engines: {node: '>=20'}
     peerDependencies:
       react: '>=18'
@@ -9740,16 +9740,16 @@ snapshots:
       react: 18.3.1
       react-redux: 9.2.0(@types/react@18.3.17)(react@18.3.1)(redux@5.0.1)
 
-  '@rjsf/core@6.1.2(@rjsf/utils@6.1.2(react@18.3.1))(react@18.3.1)':
+  '@rjsf/core@6.1.2(@rjsf/utils@6.2.3(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@rjsf/utils': 6.1.2(react@18.3.1)
+      '@rjsf/utils': 6.2.3(react@18.3.1)
       lodash: 4.17.21
       lodash-es: 4.17.22
       markdown-to-jsx: 8.0.0(react@18.3.1)
       prop-types: 15.8.1
       react: 18.3.1
 
-  '@rjsf/utils@6.1.2(react@18.3.1)':
+  '@rjsf/utils@6.2.3(react@18.3.1)':
     dependencies:
       '@x0k/json-schema-merge': 1.0.2
       fast-uri: 3.1.0
@@ -9759,9 +9759,9 @@ snapshots:
       react: 18.3.1
       react-is: 18.3.1
 
-  '@rjsf/validator-ajv8@6.1.2(@rjsf/utils@6.1.2(react@18.3.1))':
+  '@rjsf/validator-ajv8@6.1.2(@rjsf/utils@6.2.3(react@18.3.1))':
     dependencies:
-      '@rjsf/utils': 6.1.2(react@18.3.1)
+      '@rjsf/utils': 6.2.3(react@18.3.1)
       ajv: 8.17.1
       ajv-formats: 2.1.1(ajv@8.17.1)
       lodash: 4.17.21
